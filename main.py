@@ -6,13 +6,17 @@ x = 0
 class Beds:
     def fourbyfouramt(a,b):
         a = b * four_by_four
+        return a
+    def twobyeightamt(a,b):
+        a = b * two_by_eight
+        return a
         
 b = Beds()
 
 if bedType in ('1','2'):
     bedAmt = int(input("How many garden beds would you like to build? "))
-    fbf = b.fourbyfouramt(x,bedAmt)
-    if b.fourbyfouramt(x,bedAmt) == True:
-        print(x)
+    fbf = b.fourbyfouramt(bedAmt)
+    print( "${:,.2f}". format(fbf))
+        
 else:
     print("Invalid input")
