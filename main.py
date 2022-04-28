@@ -16,7 +16,7 @@ b = Beds()
 if bedType in ('1','2'):
     bedAmt = int(input("How many garden beds would you like to build? "))
     fbf = b.fourbyfouramt(bedAmt)
-    print( "${:,.2f}". format(fbf))
+    print("The price of what you want to purchase is " + "${:,.2f}". format(fbf))
         
 else:
     print("Invalid input")
